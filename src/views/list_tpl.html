@@ -1,0 +1,36 @@
+<div>
+    <!--公用的头部-->
+    <div class="box" ui-sref="home.detail" ng-repeat="value in dataList.posts">
+
+        <hr>
+        <p class="header" ng-bind="value.column.name" ng-if="value.column.name">洗洗睡</p>
+
+
+        <p class="header_two"></p>
+    </div>
+
+
+    <!--第一个的内容-->
+    <div class="post_1" ng-if="value.display_style == 10001" >
+        <p class="content"  ng-bind="value.abstract" >
+        </p>
+        <img src="../images/home/post_1.png" alt="">
+    </div>
+
+    <!--第二个内容-->
+    <div class="post_2" ng-if="value.display_style == 10002">
+
+        <p class="content_two_p"  ng-bind="value.abstract" >
+        </p>
+
+
+    </div>
+    <!--第三个内容-->
+    <div class="post_3" ng-if="value.display_style == 10003">
+
+        <img src="../images/home/post_3.png" alt="">
+        <img src="../images/home/post_4.png" alt="">
+        <img src="../images/home/post_5.png" alt="">
+
+    </div>
+</div>

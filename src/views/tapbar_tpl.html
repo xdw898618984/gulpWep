@@ -1,0 +1,33 @@
+
+<div class="tapbar" >
+    <ul>
+        <li ng-click="tabChange(0)" ng-class="{active:index==0}">
+            <p>
+                <img src="../images/tabbar/{{index==0?'authorSel.png':
+                'author_icon.png'}}" alt="">
+            </p>
+            首页
+        </li>
+        <li ng-click="tabChange(1)" ng-class="{active:index==1}">
+            <p>
+                <img src="../images/tabbar/{{index==1?'contentSel.png':
+                'content_icon.png'}}" alt="">
+            </p>
+            content
+        </li>
+        <li ng-click="tabChange(2)" ng-class="{active:index==2}">
+            <p>
+                <img src="../images/tabbar/{{index==2?'homeSel.png':
+                'home_icon.png'}}" alt="">
+            </p>
+            home
+        </li>
+        <li ng-click="tabChange(3)" ng-class="{active:index==3}">
+            <p>
+                <img src="../images/tabbar/{{index==3?'mySel.png':
+                'my_icon.png'}}" alt="">
+            </p>
+            mine
+        </li>
+    </ul>
+</div>
