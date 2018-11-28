@@ -1,35 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="app"  ng-controller="AppController">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0">
-    <title ng-bind="title">title</title>
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="utf-8">
+  <title>MyApp</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-
-<!--头部nav-->
-<nav></nav>
-
-<!--中间内容-->
-<div ui-view='home' ng-show="index==0"></div>
-<div ui-view='content' ng-show="index==1"></div>
-<div ui-view='author' ng-show="index==2"></div>
-<div ui-view='mine' ng-show="index==3"></div>
-
-<!--下部导航条-->
-<tapbar></tapbar>
-<script>
-
-    // 动态获取屏幕的分辨率
-    //    console.log(window.screen.width);
-    var fontSize = window.screen.width / 10 + 'px';
-    console.log(fontSize);
-    document.getElementsByTagName('html')[0].style.fontSize = fontSize;
-</script>
-<script src="lib/angular/angular.js"></script>
-<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="js/index.js"></script>
+  <app-root></app-root>
 </body>
 </html>
