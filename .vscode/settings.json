@@ -1,0 +1,7 @@
+{
+    "editor.minimap.maxColumn": 300,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "block-outline",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+}
