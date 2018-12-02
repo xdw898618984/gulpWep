@@ -1,0 +1,7 @@
+.test2 {
+    background: rgb(255, 0, 200);
+    width: 70%;
+    height: 100px;
+    float: left;
+    box-sizing: border-box
+}
