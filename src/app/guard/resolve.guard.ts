@@ -1,7 +1,6 @@
 import {Resolve, ActivatedRouteSnapshot, RouterStateSnapshot, Router} from '@angular/router';
 import {Product} from '../test1/test1.component';
 import {Injectable} from '@angular/core';
-import {resolve} from 'dns';
 
 //resolve 守卫
 @Injectable()

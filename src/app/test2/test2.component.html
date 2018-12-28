@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 
-<div class="test2">
-    test2
+<!-- <div class="test2">
+    我是父组件
+    <div>
+        <input type="text" placeholder="请输入基金号" [(ngModel)]="stock">
+    </div>
 </div>
+<div class="test2child">
+    <app-test2-child [stockCode]="stock" [amount]="1000"></app-test2-child>
+</div>
+
+<div class="test3child">
+
+    <app-test2-child (lastprices)="priceQutoteHandler($event)"></app-test2-child>
+    <div class="test4child">
+        这是报价组件外部,我是父组件内容 基金代码是{{pricelast.stocks}} 收购{{pricelast.lastprice | number:'2.2'}}股基金
+    </div>
+
+</div> -->
+
+
+<app-test2-child (buy)="buyHandler($event)"></app-test2-child>
+
+<app-test2-order [pricelast]="pricelast"></app-test2-order>

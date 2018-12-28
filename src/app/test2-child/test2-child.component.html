@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<div>
+    我是子组件
+    <p>买{{amount}}手{{stockCode}}基金</p>
+    <div> 输出属-----性报价组件
+
+        <div>出售{{lastPrice | number:'2.2'}} 股{{stocks }}股票</div>
+    </div>
+</div>
+<div>
+    <input type="button" value="立即够买" (click)="buyStock($event)">
+</div>

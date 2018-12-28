@@ -9,6 +9,7 @@ import {Test5Component} from './test5/test5.component';
 import {Test6Component} from './test6/test6.component';
 import {Test7Component} from './test7/test7.component';
 import {Test8Component} from './test8/test8.component';
+import {LifeComponent} from './life/life.component';
 import {ProductComponent} from './product/product.component';
 import {ProductdistComponent} from './productdist/productdist.component';
 import {Code404Component} from './code404/code404.component';
@@ -55,6 +56,9 @@ const routes : Routes = [
   }, {
     path: 'test7',
     component: Test7Component
+  }, {
+    path: 'life',
+    component: LifeComponent
   }, {
     path: 'test8',
     component: Test8Component,

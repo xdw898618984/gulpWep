@@ -1,0 +1,29 @@
+<!-- 生命周期函数 -->
+<!-- <app-life-child [name]="title"></app-life-child> -->
+<!--  onChnage 钩子和DoCheck-->
+<!-- <div class="parent">
+    <h2>我是父组件</h2>
+    <div>问候语：<input type="text" [(ngModel)]="greeting"></div>
+    <div>姓名：<input type="text" [(ngModel)]="user.name"></div>
+</div>
+<app-life-ngchange-child [greeting]="greeting" [user]="user"></app-life-ngchange-child> -->
+<!-- view child -->
+<!-- 在父组件中调用子组件的两种方法 -->
+<app-life-view-child #child1></app-life-view-child>
+<app-life-view-child #child2></app-life-view-child>
+<!-- 在父组件的模板中调用子组件的方法 -->
+<button (click)="child2.greeting('sss')">调用child2 的greeting的方法</button>
+
+<!-- 投影，将父组件的片段投影到子组件上 ，跟平台无关-->
+<div class="wrapper">
+    <h2>我是父组件</h2>
+    <div>
+        这个div定义在父组件life中
+    </div>
+    <app-life-ng-content>
+        <div class="header">这个div是父组件将要投影到子组件上面,title是{{title}}</div>
+        <div class="footer">这个div是父组件将要投影到子组件上面</div>
+    </app-life-ng-content>
+</div>
+<!-- 属性绑定 只能在浏览器中使用-->
+<div [innerHTML]="divContent"></div>
