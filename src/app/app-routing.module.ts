@@ -16,6 +16,8 @@ import {Code404Component} from './code404/code404.component';
 import {LonginGuard} from './guard/longin.guard';
 import {UnsaveGuard} from './guard/unsave.guard';
 import {ResolveGuard} from './guard/resolve.guard';
+import {PushComponent} from './push/push.component';
+
 const routes : Routes = [
   {
     path: 'test1',
@@ -59,6 +61,9 @@ const routes : Routes = [
   }, {
     path: 'life',
     component: LifeComponent
+  }, {
+    path: 'push',
+    component: PushComponent
   }, {
     path: 'test8',
     component: Test8Component,

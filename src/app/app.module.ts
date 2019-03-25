@@ -24,6 +24,8 @@ import { LifeNgchangeChildComponent } from './life-ngchange-child/life-ngchange-
 import { LifeViewChildComponent } from './life-view-child/life-view-child.component';
 import { LifeNgContentComponent } from './life-ng-content/life-ng-content.component';
 import { LifeNgafterContentComponent } from './life-ngafter-content/life-ngafter-content.component';
+import { PushComponent } from './push/push.component';
+import { BalllistComponent } from './balllist/balllist.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { LifeNgafterContentComponent } from './life-ngafter-content/life-ngafter
     LifeNgchangeChildComponent,
     LifeViewChildComponent,
     LifeNgContentComponent,
-    LifeNgafterContentComponent
+    LifeNgafterContentComponent,
+    PushComponent,
+    BalllistComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, RouterModule, FormsModule
