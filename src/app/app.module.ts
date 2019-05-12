@@ -26,6 +26,7 @@ import { LifeNgContentComponent } from './life-ng-content/life-ng-content.compon
 import { LifeNgafterContentComponent } from './life-ngafter-content/life-ngafter-content.component';
 import { PushComponent } from './push/push.component';
 import { BalllistComponent } from './balllist/balllist.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { BalllistComponent } from './balllist/balllist.component';
     LifeNgContentComponent,
     LifeNgafterContentComponent,
     PushComponent,
-    BalllistComponent
+    BalllistComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, RouterModule, FormsModule

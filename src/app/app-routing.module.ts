@@ -17,6 +17,7 @@ import {LonginGuard} from './guard/longin.guard';
 import {UnsaveGuard} from './guard/unsave.guard';
 import {ResolveGuard} from './guard/resolve.guard';
 import {PushComponent} from './push/push.component';
+import { FormComponent } from './form/form.component';
 
 const routes : Routes = [
   {
@@ -61,6 +62,9 @@ const routes : Routes = [
   }, {
     path: 'life',
     component: LifeComponent
+  }, {
+    path: 'form',
+    component: FormComponent
   }, {
     path: 'push',
     component: PushComponent
