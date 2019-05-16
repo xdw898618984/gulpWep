@@ -1,3 +1,22 @@
 <p>
-  form works!
+模板式表单
 </p>
+<input type="text" ngModel name="username" #username="ngModel">
+<p>
+  {{username.value}}
+</p>
+
+<input type="text" ngModel name="user" #user="ngModel">
+ <p> {{user.value}}</p>
+
+ <form action=" " #myform="ngForm" (ngSubmit)="Submit(myform.value)">> 
+  <input type="text" ngModel name="username">
+  <input type="text" ngModel name="password">
+  <input type="text" ngModel name="repassword">
+  <input type="text" ngModel name="usernumber">
+ </form>
+<button type="submit">打印</button>
+ <div>
+   使用：{{myform.value | json}}
+   value保存着所有表单字段(仅限标有ngModel的字段)里的当前值
+ </div>
