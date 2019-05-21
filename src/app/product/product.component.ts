@@ -9,6 +9,7 @@ export class ProductComponent implements OnInit {
   constructor(private routeInfo : ActivatedRoute) {}
 
   ngOnInit() {
+
     this
       .routeInfo
       .params
