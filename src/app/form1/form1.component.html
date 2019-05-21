@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<label for="">
+  Name:
+  <input type="text" [formControl]="name">
+</label>
+
+<p>Value：{{name.value}}</p>
+<p><button (click)="upDate()"> upDate Name</button></p>
+
+
+<app-profileeditor>
+  
+</app-profileeditor>
+

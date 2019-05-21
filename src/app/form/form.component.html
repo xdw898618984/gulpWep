@@ -2,7 +2,7 @@
 
   <label>
     <span>电子邮件地址</span>
-    <input type="text" name="email" placeholder="请输入您的Email地址" [(ngModel)]="email" #email="ngModel" required
+    <input type="text" name="email" placeholder="请输入您的Email地址" [(ngModel)]="user.email" #email="ngModel" required
       pattern="([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+.[a-zA-Z]{2,4}">
 
 
@@ -17,7 +17,7 @@
   <div>
     <label for="">
       <span>密码</span>
-      <input type="password" name="password" placeholder="请输入您的密码" [(ngModel)]="password" #password="ngModel"
+      <input type="password" name="password" placeholder="请输入您的密码" [(ngModel)]="user.password" #password="ngModel"
         required minlength="8" validateEqual="repeat" reverse="true">
     </label>
     <div *ngIf="password.errors?.required && password.touched" class="error">
@@ -31,7 +31,7 @@
   <div>
     <span>确认密码 </span>
 
-    <input type="password" name="repeat" placeholder="请再次输入密码" [(ngModel)]="repeat" #repeat="ngModel" required
+    <input type="password" name="repeat" placeholder="请再次输入密码" [(ngModel)]="user.repeat" #repeat="ngModel" required
       minlength="8" validatwEqual="password" reverse="true" >
     <div *ngIf="repeat.errors?.required && repeat.touched" class="error">
       确认密码是必填项
