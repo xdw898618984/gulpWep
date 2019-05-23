@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
 
-  <div>
-    <label for="">
-      firstName: <input type="text" formControlName="firstName">
+    <div>
+        <label for="">
+      firstName: <input type="text" formControlName="firstName" required>
     </label>
-  </div>
-  <div>
-    <label for="">
+    </div>
+    <div>
+        <label for="">
       lastName: <input type="text" formControlName="lastName">
     </label>
-  </div>
+    </div>
 
-  <div formGroupName="address">
+    <div formGroupName="address">
 
-    <h3>Address</h3>
-    <div>
-      <label for=" ">
+        <h3>Address</h3>
+        <div>
+            <label for=" ">
         street:
         <input type="text" formControlName="street">
       </label>
-    </div>
-    <div>
-      <label for=" ">
+        </div>
+        <div>
+            <label for=" ">
         city:
         <input type="text" formControlName="city">
       </label>
-    </div>
-    <div>
-      <label for=" ">
+        </div>
+        <div>
+            <label for=" ">
         state:
         <input type="text" formControlName="state">
       </label>
-    </div>
-    <div>
-      <label for=" ">
+        </div>
+        <div>
+            <label for=" ">
         zip:
         <input type="text" formControlName="zip">
       </label>
+        </div>
     </div>
-  </div>
 </form>
 
-<button type="submit"> Submit </button>
-<p>
-  <button (click)="updateProfile()">Update Profile</button>
+<button style="width:100px" type="submit"> Submit </button>
+<p style="width:20%">
+    <button (click)="updateProfile()">Update Profile</button>
 </p>
+
+<p>Form status:{{profileForm.status}}</p>
 <!-- <button type="submit" [disabled]="!profileForm.valid"> Submit </button> -->
