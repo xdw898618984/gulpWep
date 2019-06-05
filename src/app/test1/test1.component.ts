@@ -1,16 +1,16 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Params} from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 
-@Component({selector: 'app-test1', templateUrl: './test1.component.html', styleUrls: ['./test1.component.css']})
+@Component({ selector: 'app-test1', templateUrl: './test1.component.html', styleUrls: ['./test1.component.css'] })
 export class Test1Component implements OnInit {
   public productId;
   public productName;
-  constructor(private routeInfo : ActivatedRoute) {}
+  constructor(private routeInfo: ActivatedRoute) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
 }
 export class Product {
-  constructor(public id : number, public name : string) {}
+  constructor(public id: number, public name: string) { }
 
 }

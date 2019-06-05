@@ -7,25 +7,29 @@ import {
   AfterContentChecked,
   AfterContentInit
 } from '@angular/core';
-import {LifeViewChildComponent} from '../life-view-child/life-view-child.component';
-let logIndex : number = 1;
-@Component({selector: 'app-life', templateUrl: './life.component.html', styleUrls: ['./life.component.css']})
+import { LifeViewChildComponent } from '../life-view-child/life-view-child.component';
+const logIndex: number = 1;
+@Component({
+  selector: 'app-life',
+  templateUrl: './life.component.html',
+  styleUrls: ['./life.component.css']
+})
 export class LifeComponent implements OnInit,
-AfterViewInit,
-AfterViewChecked,
-AfterContentChecked,
-AfterContentInit {
+  AfterViewInit,
+  AfterViewChecked,
+  AfterContentChecked,
+  AfterContentInit {
   public title = "tom";
   greeting = "helo";
-  user : {
+  user: {
     name: string
   } = {
-    name: 'xxx'
-  }
-  divContent : "<div>慕课网</div>" //属性绑定
+      name: 'xxx'
+    }
+  divContent: "<div>慕课网</div>" //属性绑定
   @ViewChild("child1") //通过viewchild调用到了子组件的方法
-  child1 : LifeViewChildComponent
-  constructor() {}
+  child1: LifeViewChildComponent
+  constructor() { }
   ngOnInit() {
     // setInterval(() => {
     this

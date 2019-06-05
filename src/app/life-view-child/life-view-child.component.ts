@@ -1,14 +1,18 @@
-import {Component, OnInit, AfterViewInit, AfterViewChecked} from '@angular/core';
+import { Component, OnInit, AfterViewInit, AfterViewChecked } from '@angular/core';
 
-@Component({selector: 'app-life-view-child', templateUrl: './life-view-child.component.html', styleUrls: ['./life-view-child.component.css']})
+@Component({
+  selector: 'app-life-view-child',
+  templateUrl: './life-view-child.component.html',
+  styleUrls: ['./life-view-child.component.css']
+})
 export class LifeViewChildComponent implements OnInit,
-AfterViewInit,
-AfterViewChecked {
+  AfterViewInit,
+  AfterViewChecked {
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
-  greeting(name : string) {
+  ngOnInit() { }
+  greeting(name: string) {
     console.log("hello" + name);
 
   }
