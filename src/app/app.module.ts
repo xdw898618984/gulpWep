@@ -31,6 +31,7 @@ import { BalllistComponent } from './balllist/balllist.component';
 import { FormComponent } from './form/form.component';
 import { Form1Component } from './form1/form1.component';
 import { ProfileeditorComponent } from './form/profileeditor/profileeditor.component';
+import { ChildmovieComponent } from './childmovie/childmovie.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { ProfileeditorComponent } from './form/profileeditor/profileeditor.compo
     BalllistComponent,
     FormComponent,
     Form1Component,
-    ProfileeditorComponent
+    ProfileeditorComponent,
+    ChildmovieComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule

@@ -1,8 +1,14 @@
-<p>
-    push works!
-</p>
+<!DOCTYPE html>
+<h1>变更检测策略</h1>
+<p>{{slogan}}</p>
+<button type="button" (click)="changeStar()">
+  改变明星属性
 
-<app-balllist [balls]="balls"></app-balllist>
-<input #input>
-<button (click)="add(input.value)"> add</button>
-<!-- <button (click)="change()">Change</button> -->
+</button>
+<button type="button" (click)="changeStarObject()">
+  改变明星对象
+</button>
+
+<app-childmovie [title]="title" [star]="star"></app-childmovie>
+
+

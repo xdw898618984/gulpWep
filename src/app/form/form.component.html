@@ -20,7 +20,7 @@
       <input type="password" name="password" placeholder="请输入您的密码" [(ngModel)]="user.password" #password="ngModel"
         required minlength="8" validateEqual="repeat" reverse="true">
     </label>
-        <div *ngIf="password.errors?.required && password.touched" class="error">
+        <div *ngIf="password.errors.required && password.touched " class="error">
             密码是必填项
         </div>
         <div *ngIf="password.errors?.minlength && password.touched" class="error">
