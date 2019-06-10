@@ -10,6 +10,7 @@ export class Test1Component implements OnInit {
   public productName;
   public time;
   public url;
+  public title: string = '标题';
   constructor(private routeInfo: ActivatedRoute, private hero: HeroService) { }
 
   ngOnInit() {

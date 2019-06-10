@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -32,6 +32,7 @@ import { FormComponent } from './form/form.component';
 import { Form1Component } from './form1/form1.component';
 import { ProfileeditorComponent } from './form/profileeditor/profileeditor.component';
 import { ChildmovieComponent } from './childmovie/childmovie.component';
+import { SharedModule } from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -61,10 +62,10 @@ import { ChildmovieComponent } from './childmovie/childmovie.component';
     FormComponent,
     Form1Component,
     ProfileeditorComponent,
-    ChildmovieComponent
+    ChildmovieComponent,
   ],
   imports: [
-    BrowserModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule
+    BrowserModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
