@@ -14,6 +14,10 @@ export interface Address {
 
 }
 
+export class Hero {
+    id: number; name: string
+}
+
 
 export class Star {
     constructor(public firstName: string, public lastName: string, public type?: string) {
