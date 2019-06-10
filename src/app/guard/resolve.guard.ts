@@ -1,5 +1,5 @@
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
-import { Product } from '../test1/test1.component';
+import { Product } from '../common/test1/test1.component';
 import { Injectable } from '@angular/core';
 
 //resolve 守卫

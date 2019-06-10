@@ -1,17 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
-import { HeroService } from "../service/hero.service"
+import { HeroService } from "../../service/hero.service"
 import { Observable } from 'rxjs';
 
-@Component({ selector: 'app-test1', templateUrl: './test1.component.html', styleUrls: ['./test1.component.css'] })
+@Component({
+  selector: 'app-test1',
+  templateUrl: './test1.component.html',
+  styleUrls: ['./test1.component.css']
+})
 export class Test1Component implements OnInit {
   public productId;
   public productName;
   public time;
   public url;
   public title: string = '标题';
-  constructor(private routeInfo: ActivatedRoute, private hero: HeroService) { }
+
+  public titleupper: string = "ngmodule";
+  public titlelow: string = "MODULE";
+  public titlecase: string = "titlecasepipe";
+  constructor(private routeInfo: ActivatedRoute, private hero: HeroService, private router: Router) { }
 
   ngOnInit() {
 
@@ -30,11 +38,15 @@ export class Test1Component implements OnInit {
 
     })
 
+
+
     console.log(this.routeInfo);
 
 
   }
-
+  goPipe() {
+    this.router.navigate(['./product/1'])
+  }
 }
 export class Product {
   constructor(public id: number, public name: string) { }

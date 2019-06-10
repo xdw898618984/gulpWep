@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<div class="test1">
+
+
+    <div>小写转大写 {{ titleupper | uppercase }}</div>
+    <div>大写转小写 {{ titlelow | lowercase }}</div>
+    <div>标题形式 {{ titlecase | titlecase }}</div>
+    <div> Time:{{time|async}}</div>
+    <div>URL:{{url}}</div>
+    <div>{{title | awsesome}}</div>
+
+    <h2>指令用法"hightlight"</h2>
+
+
+    <div class="container">
+        <div class="row">
+            <span><a class="btn btn-default" (click)="goPipe()">管道</a></span>
+            <span><a class="btn btn-default" [routerLink]="['./productdist',2]">商品详情</a></span>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
