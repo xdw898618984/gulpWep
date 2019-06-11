@@ -36,6 +36,12 @@ import { SharedModule } from "./shared/shared.module";
 import { AboutComponent } from './common/test3/about/about.component';
 import { OpenCloseComponent } from './common/test3/open-close/open-close.component';
 import { StatusComponent } from './common/test3/status/status.component';
+import { HomesComponent } from './common/test3/homes/homes.component';
+import { ToggleComponent } from './common/test3/toggle/toggle.component';
+import { EnterComponent } from './common/test3/enter/enter.component';
+import { AutoComponent } from './common/test3/auto/auto.component';
+import { FilterComponent } from './common/test3/filter/filter.component';
+import { HeroGroupComponent } from './common/test3/hero-group/hero-group.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +75,12 @@ import { StatusComponent } from './common/test3/status/status.component';
     AboutComponent,
     OpenCloseComponent,
     StatusComponent,
+    HomesComponent,
+    ToggleComponent,
+    EnterComponent,
+    AutoComponent,
+    FilterComponent,
+    HeroGroupComponent,
   ],
   imports: [
     BrowserModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule

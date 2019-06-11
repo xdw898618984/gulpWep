@@ -19,7 +19,15 @@ import { ResolveGuard } from './guard/resolve.guard';
 import { PushComponent } from './push/push.component';
 import { FormComponent } from './form/form.component';
 import { Form1Component } from './form1/form1.component';
-
+import { AboutComponent } from './common/test3/about/about.component';
+import { OpenCloseComponent } from './common/test3/open-close/open-close.component';
+import { StatusComponent } from './common/test3/status/status.component';
+import { HomesComponent } from './common/test3/homes/homes.component';
+import { ToggleComponent } from './common/test3/toggle/toggle.component';
+import { EnterComponent } from './common/test3/enter/enter.component';
+import { AutoComponent } from './common/test3/auto/auto.component';
+import { FilterComponent } from './common/test3/filter/filter.component';
+import { HeroGroupComponent } from './common/test3/hero-group/hero-group.component';
 
 const routes: Routes = [
   {
@@ -45,8 +53,49 @@ const routes: Routes = [
     path: 'test2',
     component: Test2Component
   }, {
-    path: 'test3/:id',
+    path: 'test3',
     component: Test3Component,
+    children: [{
+      path: 'homes',
+      component: HomesComponent,
+      data: { animation: 'HomePage' }
+    }, {
+      path: 'about',
+      component: AboutComponent,
+      data: { animation: 'AboutPage' }
+    },
+    {
+      path: 'open',
+      component: OpenCloseComponent,
+    },
+    {
+      path: 'status',
+      component: StatusComponent,
+    },
+    {
+      path: 'toggle',
+      component: ToggleComponent,
+    },
+    {
+      path: 'enter',
+      component: EnterComponent,
+    },
+    {
+      path: 'auto',
+      component: AutoComponent,
+    },
+    {
+      path: 'status',
+      component: StatusComponent,
+    },
+    {
+      path: 'filter',
+      component: FilterComponent,
+    },
+    {
+      path: 'group',
+      component: HeroGroupComponent,
+    }],
     canActivate: [LonginGuard],
     canDeactivate: [UnsaveGuard]
   }, {

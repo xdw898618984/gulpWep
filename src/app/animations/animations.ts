@@ -12,7 +12,7 @@ export const transAnimation = animation([
 export const slideInAnimation = trigger('routeAnimations', [
 
     transition('HomePage <=> AboutPage', [
-        style({ position: 'relactive' }),
+        style({ position: 'relative' }),
         query(':enter,:leave', [
             style({
                 position: 'absolute',
