@@ -25,8 +25,8 @@ export class ProductComponent implements OnInit {
       }) => {
         console.log(data);
 
-        this.productId = data.product.id;
-        this.productName = data.product.name
+        // this.productId = data.product.id;
+        // this.productName = data.product.name
       })
   }
 

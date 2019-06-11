@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<div>
+    <div class="container">
+        <div class="row">{{stocks }}股票当前价格是{{lastPrice | number:'2.2'}} 每股</div>
+    </div>
+
+    <form [formGroup]="contactForm">
+        <span>买入</span><input type="number" formControlName="name" required>
+        <div *ngIf="!contactForm.controls['name'].valid && contactForm.controls['name'].required && contactForm.controls['name'].touched" class="text-danger">
+            amount is required！
+        </div>
+    </form>
+</div>
+<div>
+    <input style="width:100px" type="submit" class="center center-block btn btn-primary" role="button" value="立即够买" (click)="buyStock($event)">
+</div>

@@ -2,22 +2,35 @@
 
 <div class="test1">
 
-
-    <div>小写转大写 {{ titleupper | uppercase }}</div>
-    <div>大写转小写 {{ titlelow | lowercase }}</div>
-    <div>标题形式 {{ titlecase | titlecase }}</div>
-    <div> Time:{{time|async}}</div>
+    <div>小写转大写： {{ title1 | uppercase }}</div>
+    <div>大写转小写： {{ title2| lowercase }}</div>
+    <div>标题形式： {{ title3 | titlecase }}</div>
+    <div>数字转金额： {{ title4 | currency }}</div>
+    <div>对象：{{ title5 }}</div>
+    <div>对象转json格式: {{ title5 | json }}</div>
+    <div>数字转金额: {{ title6 | number:'2.2-2' }}</div>
+    <div>日期格式化: {{ title7 | date }}</div>
+    <div>日期格式化: {{ title7 | date:'fullDate' }}</div>
+    <div>日期格式化: {{ title7 | date:'h:mm a z' }}</div>
+    <div>数字转字符串: {{ title8 | number:'3.1-6' }}</div>
+    <div>从array或者string中截取，创建一个新子集: {{ title9 | slice:1:3 }}</div>
+    <div>
+        <li *ngFor="let item of title12 | slice:1:3">从array或者string中截取，创建一个新子集:{{item}}</li>
+    </div>
+    <div>数字转百分比字符串： {{ title10 | percent }}</div>
+    <div>数字转百分比字符串： {{ title10 | percent:'4.3-5'}}</div>
+    <div>数字： {{ title11 | titlecase }}</div>
+    <div> async:{{time|async}}</div>
+    <div>自定义管道：{{title | awsesome}}</div>
     <div>URL:{{url}}</div>
-    <div>{{title | awsesome}}</div>
-
-    <h2>指令用法"hightlight"</h2>
+    <h2>指令用法给所有input和h2标签添加背景颜色</h2>
 
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <span><a class="btn btn-default" (click)="goPipe()">管道</a></span>
             <span><a class="btn btn-default" [routerLink]="['./productdist',2]">商品详情</a></span>
         </div>
-    </div>
-    <router-outlet></router-outlet>
+    </div> -->
+    <!-- <router-outlet></router-outlet> -->
 </div>

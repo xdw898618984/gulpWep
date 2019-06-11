@@ -31,6 +31,8 @@ export class ProfileeditorComponent implements OnInit {
 
   onSubmit() {
     console.warn(this.profileForm.value);
+    console.log(this.profileForm);
+
 
   }
   updateProfile() {

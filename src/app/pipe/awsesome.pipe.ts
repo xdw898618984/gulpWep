@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class AwsesomePipe implements PipeTransform {
 
   transform(value: string) {
-    return value ? "大写" + value : "";
+    return value ? "大写--" + value : "";
 
 
   }
