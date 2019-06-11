@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { Test1Component } from './common/test1/test1.component';
 import { Test2Component } from './common/test2/test2.component';
-import { Test3Component } from './test3/test3.component';
+import { Test3Component } from './common/test3/test3.component';
 import { Test4Component } from './test4/test4.component';
 import { Test5Component } from './test5/test5.component';
 import { AppRoutingModule } from './app-routing.module';

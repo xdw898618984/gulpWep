@@ -1,6 +1,6 @@
 import { CanDeactivate } from '@angular/router';
 // 路由离开的守卫
-import { Test3Component } from '../test3/test3.component';
+import { Test3Component } from '../common/test3/test3.component';
 //这是一个泛型
 export class UnsaveGuard implements CanDeactivate<Test3Component> {
     canDeactivate(component: Test3Component) {
