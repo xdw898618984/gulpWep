@@ -33,6 +33,9 @@ import { Form1Component } from './form1/form1.component';
 import { ProfileeditorComponent } from './form/profileeditor/profileeditor.component';
 import { ChildmovieComponent } from './childmovie/childmovie.component';
 import { SharedModule } from "./shared/shared.module";
+import { AboutComponent } from './common/test3/about/about.component';
+import { OpenCloseComponent } from './common/test3/open-close/open-close.component';
+import { StatusComponent } from './common/test3/status/status.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +66,9 @@ import { SharedModule } from "./shared/shared.module";
     Form1Component,
     ProfileeditorComponent,
     ChildmovieComponent,
+    AboutComponent,
+    OpenCloseComponent,
+    StatusComponent,
   ],
   imports: [
     BrowserModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule
