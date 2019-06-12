@@ -1,0 +1,12 @@
+:host {
+    display: block;
+}
+
+.open-clode-container {
+    border: 1px solid #ddd;
+    margin-top: 1em;
+    padding: 20px 20px 0 20px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}

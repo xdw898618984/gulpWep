@@ -1,3 +1,16 @@
-<p>
-  toggle works!
-</p>
+<!DOCTYPE html>
+<section>
+    <h2> Toggle Animations</h2>
+</section>
+
+
+
+<nav>
+    <button (click)="toggleAnimations()"> Toggle Animations </button>
+    <button (click)="toggle()">Toggle Open/Closed</button>
+</nav>
+<div [@.disabled]="isDisabled">
+    <div [@childAnimation]="isOpen ? 'open':'closed'" class="open-close-container">
+        <p>The box id noe {{isOpen ? 'open' :'closed'}}</p>
+    </div>
+</div>

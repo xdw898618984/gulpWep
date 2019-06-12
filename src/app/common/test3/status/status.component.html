@@ -1,3 +1,14 @@
-<p>
-  status works!
-</p>
+<!DOCTYPE html>
+
+<section>
+    <h2>Status Slider</h2>
+</section>
+
+<nav>
+
+    <button (click)="toggle()">Toggle Status</button>
+
+</nav>
+<div [@sliderStatus]="status" class="box">
+    {{status=='active' ? 'Active' :'Inactive'}}
+</div>

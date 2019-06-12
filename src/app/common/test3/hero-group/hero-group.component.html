@@ -1,3 +1,15 @@
-<p>
-  hero-group works!
-</p>
+<!DOCTYPE html>
+<section>
+    <h2>Hero list Group </h2>
+</section>
+<nav>
+    <ul class="heroes">
+        <li *ngFor="let item of heroes" [@flyInOut]="'in'" (click)="removeHero(item.id)">
+            <div class="inner">
+                <span class="badge">{{item.id}}</span>
+                <span>{{item.name}}</span>
+            </div>
+
+        </li>
+    </ul>
+</nav>
