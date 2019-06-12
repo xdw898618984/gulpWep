@@ -3,17 +3,18 @@
 Toggele All Animations
 <input type="checkbox" name="" id="" [checked]="!animationsDisabled" (click)="toggleAnimations()">
 <nav>
-  <a id="home" [routerLink]="['/test3/homes']" routerLinkActive="active">Home</a>
-  <a id="about" [routerLink]="['/test3/about']" routerLinkActive="active">About</a>
-  <a id="open-close" [routerLink]="['/test3/open']" routerLinkActive="active">Open/Close</a>
-  <a id="status" [routerLink]="['/test3/status']" routerLinkActive="active">Status Slider</a>
-  <a id="toggle" [routerLink]="['/test3/toggle']" routerLinkActive="active">Toggle Animations</a>
-  <a id="enter-leave" [routerLink]="['/test3/enter']" routerLinkActive="active">Enter/Leave</a>
-  <a id="auto" [routerLink]="['/test3/auto']" routerLinkActive="active">Auto Calculation</a>
-  <a id="heroer" [routerLink]="['/test3/filter']" routerLinkActive="active">Filter/Stagger</a>
-  <a id="hero-groups" [routerLink]="['/test3/group']" routerLinkActive="active">Hero Groups</a>
+    <a id="home" [routerLink]="['/test3/homes']" routerLinkActive="active">Home</a>
+    <a id="about" [routerLink]="['/test3/about']" routerLinkActive="active">About</a>
+    <a id="open-close" [routerLink]="['/test3/open']" routerLinkActive="active">Open/Close</a>
+    <a id="status" [routerLink]="['/test3/status']" routerLinkActive="active">Status Slider</a>
+    <a id="toggle" [routerLink]="['/test3/toggle']" routerLinkActive="active">Toggle Animations</a>
+    <a id="enter-leave" [routerLink]="['/test3/enter']" routerLinkActive="active">Enter/Leave</a>
+    <a id="auto" [routerLink]="['/test3/auto']" routerLinkActive="active">Auto Calculation</a>
+    <a id="heroer" [routerLink]="['/test3/filter']" routerLinkActive="active">Filter/Stagger</a>
+    <a id="hero-groups" [routerLink]="['/test3/group']" routerLinkActive="active">Hero Groups</a>
+    <a id="hero-groups" [routerLink]="['/test3/reuse']" routerLinkActive="active">Reuse Groups</a>
 </nav>
 
 <div [@routeAnimations]="preparRoute(outlet)">
-  <router-outlet #outlet="outlet"></router-outlet>
+    <router-outlet #outlet="outlet"></router-outlet>
 </div>

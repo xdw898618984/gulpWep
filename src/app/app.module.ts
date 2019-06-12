@@ -43,6 +43,7 @@ import { AutoComponent } from './common/test3/auto/auto.component';
 import { FilterComponent } from './common/test3/filter/filter.component';
 import { HeroGroupComponent } from './common/test3/hero-group/hero-group.component';
 import { OpenClosePageComponent } from './common/test3/open-close-page/open-close-page.component';
+import { ReuseComponent } from './common/test3/reuse/reuse.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { OpenClosePageComponent } from './common/test3/open-close-page/open-clos
     FilterComponent,
     HeroGroupComponent,
     OpenClosePageComponent,
+    ReuseComponent,
   ],
   imports: [
     BrowserModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule

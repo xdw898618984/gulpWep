@@ -29,6 +29,7 @@ import { AutoComponent } from './common/test3/auto/auto.component';
 import { FilterComponent } from './common/test3/filter/filter.component';
 import { HeroGroupComponent } from './common/test3/hero-group/hero-group.component';
 import { OpenClosePageComponent } from './common/test3/open-close-page/open-close-page.component';
+import { ReuseComponent } from './common/test3/reuse/reuse.component';
 
 const routes: Routes = [
   {
@@ -96,6 +97,11 @@ const routes: Routes = [
     {
       path: 'group',
       component: HeroGroupComponent,
+
+    },
+    {
+      path: 'reuse',
+      component: ReuseComponent,
 
     }],
     canActivate: [LonginGuard],

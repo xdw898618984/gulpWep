@@ -11,20 +11,21 @@ import { Transform } from 'stream';
     trigger('flyInOut', [
       state('in', style({
         width: 120,
-        Transform: 'translateX(0)',
-        opacity: 1
+        transform: 'translateX(0)', opacity: 1
       })),
-      transition('void=>*', [
+      transition('void => *', [
         style({ width: 10, transform: 'translateX(50px)', opacity: 0 }),
         group([
           animate('0.3s 0.1s ease', style({
             transform: 'translateX(0)',
-            width: 120,
+            width: 120
           })),
-          animate('0.3s ease', style({ opacity: 1 }))
+          animate('0.3s ease', style({
+            opacity: 1
+          }))
         ])
       ]),
-      transition('*=>void', [
+      transition('* => void', [
         group([
           animate('0.3s ease', style({
             transform: 'translateX(50px)',

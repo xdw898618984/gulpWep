@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<section>
+    <h2>Reuse 复用动画</h2>
+</section>
+
+<nav>
+
+    <button (click)="toggle()">Toggle Status</button>
+
+</nav>
+<div [@openClose]="isOpen ? 'open':'closed'" class="box">
+    {{status=='active' ? 'Active' :'Inactive'}}
+</div>
