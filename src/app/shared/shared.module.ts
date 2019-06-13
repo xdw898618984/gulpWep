@@ -5,6 +5,7 @@ import { AwsesomePipe } from "../pipe/awsesome.pipe";
 import { HightlightDirective } from "../directive/hightlight.directive";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+
 /**
  * 共享module
  */
