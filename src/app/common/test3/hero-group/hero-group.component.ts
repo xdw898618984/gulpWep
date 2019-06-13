@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { Heros } from "../../../../mock/mock-hero"
 import { trigger, transition, animate, style, query, stagger, state, group } from '@angular/animations'
-import { Transform } from 'stream';
 @Component({
   selector: 'app-hero-group',
   templateUrl: './hero-group.component.html',

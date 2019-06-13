@@ -1,5 +1,7 @@
-<p>
-    test4 works!
-</p>
-
-<div></div>
+<!DOCTYPE html>
+<h3>列表排序</h3>
+<div class="box-list" cdkDropList (cdkDropListDropped)="drop($event)">
+  <div class="drag-box" *ngFor="let customer of customers" cdkDrag>
+    {{customer.name}}
+  </div>
+</div>

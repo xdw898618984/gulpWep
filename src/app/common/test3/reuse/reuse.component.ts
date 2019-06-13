@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, style, state, useAnimation, transition, } from '@angular/animations';
 import { transAnimation } from "../../../animations/animations"
-import { userInfo } from 'os';
 @Component({
   selector: 'app-reuse',
   templateUrl: './reuse.component.html',
