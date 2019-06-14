@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 // import { } f;
 
@@ -92,7 +93,7 @@ import { ReuseComponent } from './common/test3/reuse/reuse.component';
     ReuseComponent,
   ],
   imports: [
-    BrowserModule, DragDropModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule
+    BrowserModule, ScrollingModule, DragDropModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

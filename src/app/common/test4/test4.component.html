@@ -35,8 +35,13 @@
     <div class="row">
 
         <div cdkDrag cdkDragRootElement=".dragParent">
-            在一定范围内拖拽k
+            在一定范围内拖拽
         </div>
     </div>
+
+    <cdk-virtual-scroll-viewport itemSize='5' class="box-list">
+
+        <div *cdkVirtualFor="let item of items"> {{item}}</div>
+    </cdk-virtual-scroll-viewport>
 
 </div>
