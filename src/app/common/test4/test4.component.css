@@ -1,0 +1,24 @@
+.box-list {
+    width: 500px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    min-height: 60px;
+    display: block;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    border-bottom: none
+}
+
+.drag-box {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    color: rgb(0, 0, 0.87);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: white;
+    font-size: 14px;
+}
