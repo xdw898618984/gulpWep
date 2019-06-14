@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Heros } from "../../../../mock/mock-hero"
-import { trigger, transition, animate, style, query, stagger, state } from '@angular/animations'
+import { Heros } from "../../../../mock/mock-hero";
+import { trigger, transition, animate, style, query, stagger, state } from '@angular/animations';
 @Component({
   selector: 'app-auto',
   templateUrl: './auto.component.html',
@@ -23,9 +23,9 @@ export class AutoComponent implements OnInit {
 
   ngOnInit() {
     console.log(Heros);
-    this.heroes = Heros
+    this.heroes = Heros;
   }
   removeHero(id: number) {
-    this.heroes = this.heroes.filter(hero => hero.id !== id)
+    this.heroes = this.heroes.filter(hero => hero.id !== id);
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
-import { transition, trigger, state, animate, style } from '@angular/animations'
+import { transition, trigger, state, animate, style } from '@angular/animations';
 @Component({
   selector: 'app-toggle',
   templateUrl: './toggle.component.html',
@@ -35,6 +35,6 @@ export class ToggleComponent implements OnInit {
     this.isDisabled = !this.isDisabled;
   }
   toggle() {
-    this.isOpen = !this.isOpen
+    this.isOpen = !this.isOpen;
   }
 }

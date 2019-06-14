@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Heros } from "../../../../mock/mock-hero"
-import { trigger, transition, animate, style, query, stagger, state, group } from '@angular/animations'
+import { Heros } from "../../../../mock/mock-hero";
+import { trigger, transition, animate, style, query, stagger, state, group } from '@angular/animations';
 @Component({
   selector: 'app-hero-group',
   templateUrl: './hero-group.component.html',
@@ -45,10 +45,10 @@ export class HeroGroupComponent implements OnInit {
 
   ngOnInit() {
     console.log(Heros);
-    this.heroes = Heros
+    this.heroes = Heros;
   }
   removeHero(id: number) {
-    this.heroes = this.heroes.filter(hero => hero.id !== id)
+    this.heroes = this.heroes.filter(hero => hero.id !== id);
   }
 
 }

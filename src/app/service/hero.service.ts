@@ -16,7 +16,7 @@ export class HeroService {
 
 
   getHeros(): Observable<Hero[]> {
-    this.message.add('heros:fetch')
-    return of(Heros)
+    this.message.add('heros:fetch');
+    return of(Heros);
   }
 }

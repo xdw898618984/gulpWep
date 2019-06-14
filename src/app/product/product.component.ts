@@ -14,8 +14,8 @@ export class ProductComponent implements OnInit {
       .routeInfo
       .params
       .subscribe((params: Params) => {
-        //拿到商品id
-        this.productId = params.id
+        // 拿到商品id
+        this.productId = params.id;
       });
     this
       .routeInfo
@@ -27,7 +27,7 @@ export class ProductComponent implements OnInit {
 
         // this.productId = data.product.id;
         // this.productName = data.product.name
-      })
+      });
   }
 
 }

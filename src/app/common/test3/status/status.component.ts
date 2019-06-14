@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, transition, state, animate, style, keyframes } from '@angular/animations'
+import { trigger, transition, state, animate, style, keyframes } from '@angular/animations';
 @Component({
   selector: 'app-status',
   templateUrl: './status.component.html',
@@ -40,7 +40,7 @@ export class StatusComponent implements OnInit {
   ngOnInit() {
   }
   toggle() {
-    this.status === 'active' ? this.status = 'inactive' : this.status = 'active'
+    this.status === 'active' ? this.status = 'inactive' : this.status = 'active';
 
   }
 }

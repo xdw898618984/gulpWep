@@ -5,6 +5,8 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 // import { } f;
 
 import { AppComponent } from './app.component';
@@ -12,7 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { Test1Component } from './common/test1/test1.component';
 import { Test2Component } from './common/test2/test2.component';
 import { Test3Component } from './common/test3/test3.component';
-import { Test4Component } from './test4/test4.component';
+import { Test4Component } from './common/test4/test4.component';
 import { Test5Component } from './test5/test5.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Code404Component } from './code404/code404.component';
@@ -90,7 +92,7 @@ import { ReuseComponent } from './common/test3/reuse/reuse.component';
     ReuseComponent,
   ],
   imports: [
-    BrowserModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule
+    BrowserModule, DragDropModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

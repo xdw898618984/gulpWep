@@ -1,5 +1,5 @@
 import { animation, trigger, animateChild, group, transition, animate, style, query } from "@angular/animations";
-//创建可复用动画
+// 创建可复用动画
 export const transAnimation = animation([
     style({
         height: '{{height}}',
@@ -60,4 +60,4 @@ export const slideInAnimation = trigger('routeAnimations', [
         ]),
         query(':enter', animateChild())
     ])
-])
+]);

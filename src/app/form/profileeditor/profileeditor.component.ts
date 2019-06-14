@@ -49,6 +49,6 @@ export class ProfileeditorComponent implements OnInit {
     return this.profileForm.get('aliases') as FormArray;
   }
   addAlias() {
-    this.aliases.push(this.fb.control(''))
+    this.aliases.push(this.fb.control(''));
   }
 }

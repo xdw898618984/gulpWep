@@ -1,6 +1,6 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
-import { Heros } from "../../../../mock/mock-hero"
-import { trigger, transition, animate, style, query, stagger, state } from '@angular/animations'
+import { Heros } from "../../../../mock/mock-hero";
+import { trigger, transition, animate, style, query, stagger, state } from '@angular/animations';
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
@@ -46,18 +46,18 @@ export class FilterComponent implements OnInit {
 
   ngOnInit() {
     console.log(Heros);
-    this.heroes = Heros
+    this.heroes = Heros;
   }
 
 
   updateCriteria(criteria: string) {
     criteria = criteria ? criteria.trim() : '';
-    this.heroes = Heros.filter(hero => hero.name.toLowerCase().includes(criteria.toLowerCase()))
+    this.heroes = Heros.filter(hero => hero.name.toLowerCase().includes(criteria.toLowerCase()));
     const newTotal = this.heroes.length;
     if (newTotal !== this.heroTotal) {
-      this.heroTotal = newTotal
+      this.heroTotal = newTotal;
     } else if (!criteria) {
-      this.heroTotal = -1
+      this.heroTotal = -1;
     }
   }
 

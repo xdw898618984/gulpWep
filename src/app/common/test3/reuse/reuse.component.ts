@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, style, state, useAnimation, transition, } from '@angular/animations';
-import { transAnimation } from "../../../animations/animations"
+import { transAnimation } from "../../../animations/animations";
 @Component({
   selector: 'app-reuse',
   templateUrl: './reuse.component.html',
@@ -51,7 +51,7 @@ export class ReuseComponent implements OnInit {
   }
   toggle() {
     // this.status = 'closed'
-    this.isOpen = !this.isOpen
+    this.isOpen = !this.isOpen;
 
   }
 }

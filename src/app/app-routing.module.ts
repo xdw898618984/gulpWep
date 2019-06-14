@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { Test1Component } from './common/test1/test1.component';
 import { Test2Component } from './common/test2/test2.component';
 import { Test3Component } from './common/test3/test3.component';
-import { Test4Component } from './test4/test4.component';
+import { Test4Component } from './common/test4/test4.component';
 import { Test5Component } from './test5/test5.component';
 import { Test6Component } from './test6/test6.component';
 import { Test7Component } from './test7/test7.component';
@@ -149,7 +149,7 @@ const routes: Routes = [
   imports: [
     CommonModule, RouterModule.forRoot(routes)
   ],
-  //登录守卫和离开守卫 resolve 守卫
+  // 登录守卫和离开守卫 resolve 守卫
   providers: [LonginGuard, UnsaveGuard, ResolveGuard]
 })
 export class AppRoutingModule { }

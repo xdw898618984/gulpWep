@@ -3,7 +3,7 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 import { trigger, state, style, animate, transition } from "@angular/animations";
 
 import { slideInAnimation } from "../../animations/animations";
-import { RouterOutlet } from "@angular/router"
+import { RouterOutlet } from "@angular/router";
 
 
 
@@ -22,7 +22,7 @@ export class Test3Component implements OnInit {
   }
   preparRoute(outlet: RouterOutlet) {
 
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation']
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
   toggleAnimations() {
     this.animationsDisabled = !this.animationsDisabled;

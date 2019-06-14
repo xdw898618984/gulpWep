@@ -12,7 +12,7 @@ export class OpenClosePageComponent implements OnInit {
   ngOnInit() {
   }
   toggleLogging() {
-    this.logging = !this.logging
+    this.logging = !this.logging;
   }
 
 }
