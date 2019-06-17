@@ -1,9 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
-@Component({ selector: 'app-test4', templateUrl: './test4.component.html', styleUrls: ['./test4.component.css'] })
+import { FixedSizeVirtualScrollStrategy, VIRTUAL_SCROLL_STRATEGY } from "@angular/cdk/scrolling";
+
+@Component({
+  selector: 'app-test4',
+  templateUrl: './test4.component.html',
+  styleUrls: ['./test4.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
 export class Test4Component implements OnInit {
 
   // customers = [
@@ -13,7 +20,7 @@ export class Test4Component implements OnInit {
   //   { name: 'John', age: 30 },
   //   { name: 'Watson', age: 42 },
   // ];
-  items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+  items = Array.from({ length: 10000 }).map((_, i) => `Item #${i}`)
   customers = [new Customer('Adam', 12), new Customer('Jack', 18), new Customer('John', 12), new Customer('Watson', 18)]
   customers3 = [new Customer('Adam', 12), new Customer('Jack', 18), new Customer('John', 12), new Customer('Watson', 18)]
   customers2 = [new Customer('昌亚欣', 12), new Customer('熊德伟', 18)]
@@ -37,8 +44,13 @@ export class Test4Component implements OnInit {
     console.log(event);
     moveItemInArray(this.customers3, event.previousIndex, event.currentIndex);
   }
+  virtual(item) {
+    console.log(item);
 
+  }
 }
+
+
 class Customer {
   constructor(private name: string, private age: number) {
 

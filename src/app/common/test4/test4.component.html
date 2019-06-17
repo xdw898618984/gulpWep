@@ -34,14 +34,21 @@
 
     <div class="row">
 
-        <div cdkDrag cdkDragRootElement=".dragParent">
-            在一定范围内拖拽
+        <div class="example-box" cdkDrag>
+            dragged
+            <div class="example-handle" cdkDrgHandle>
+                <svg width='24px' fill="currentColor" viewBox="0 0 24 24">
+                 <path d="M10 9h4V6h31-5-5-5 5h3v3zm-1 1H6V71-5 5 5 5v-3h3v-4zm14 21-5-5v3h-3v4h3v315-5zm-9 3h-4v3H715 5 5-5h-3v-3z"></path>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+             </svg>
+            </div>
         </div>
     </div>
 
-    <cdk-virtual-scroll-viewport itemSize='5' class="box-list">
+    <h2> 虚拟滚动</h2>
 
-        <div *cdkVirtualFor="let item of items"> {{item}}</div>
+    <cdk-virtual-scroll-viewport itemSize='50' class="example-viewport">
+
+        <div *cdkVirtualFor="let item of items;templateCacheSize:0" class="example-item" (click)="virtual(item)"> {{item}}</div>
     </cdk-virtual-scroll-viewport>
-
 </div>
