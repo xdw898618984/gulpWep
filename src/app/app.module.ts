@@ -16,7 +16,7 @@ import { Test1Component } from './common/test1/test1.component';
 import { Test2Component } from './common/test2/test2.component';
 import { Test3Component } from './common/test3/test3.component';
 import { Test4Component } from './common/test4/test4.component';
-import { Test5Component } from './test5/test5.component';
+import { Test5Component } from './common/test5/test5.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Code404Component } from './code404/code404.component';
 import { Test6Component } from './test6/test6.component';
@@ -50,6 +50,19 @@ import { FilterComponent } from './common/test3/filter/filter.component';
 import { HeroGroupComponent } from './common/test3/hero-group/hero-group.component';
 import { OpenClosePageComponent } from './common/test3/open-close-page/open-close-page.component';
 import { ReuseComponent } from './common/test3/reuse/reuse.component';
+import { HeroParentComponent } from './common/test5/hero-parent/hero-parent.component';
+import { NameParentComponent } from './common/test5/name-parent/name-parent.component';
+import { VersionParentComponent } from './common/test5/version-parent/version-parent.component';
+import { VoteTakerComponent } from './common/test5/vote-taker/vote-taker.component';
+import { CountdownParentLvComponent } from './common/test5/countdown-parent-lv/countdown-parent-lv.component';
+import { CountdownParentVcComponent } from './common/test5/countdown-parent-vc/countdown-parent-vc.component';
+import { MissionControlComponent } from './common/test5/mission-control/mission-control.component';
+import { HeroChildComponent } from './common/test5/hero-parent/hero-child/hero-child.component';
+import { NameChildComponent } from './common/test5/name-parent/name-child/name-child.component';
+import { VersionChildComponent } from './common/test5/version-parent/version-child/version-child.component';
+import { VoterComponent } from './common/test5/vote-taker/voter/voter.component';
+import { CountdownTimerComponent } from './common/test5/countdown-parent-lv/countdown-timer/countdown-timer.component';
+import { AstronautComponent } from './common/test5/mission-control/astronaut/astronaut.component';
 
 @NgModule({
   declarations: [
@@ -91,6 +104,19 @@ import { ReuseComponent } from './common/test3/reuse/reuse.component';
     HeroGroupComponent,
     OpenClosePageComponent,
     ReuseComponent,
+    HeroParentComponent,
+    NameParentComponent,
+    VersionParentComponent,
+    VoteTakerComponent,
+    CountdownParentLvComponent,
+    CountdownParentVcComponent,
+    MissionControlComponent,
+    HeroChildComponent,
+    NameChildComponent,
+    VersionChildComponent,
+    VoterComponent,
+    CountdownTimerComponent,
+    AstronautComponent,
   ],
   imports: [
     BrowserModule, ScrollingModule, DragDropModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule
