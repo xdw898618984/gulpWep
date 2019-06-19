@@ -6,7 +6,7 @@ import { Test2Component } from './common/test2/test2.component';
 import { Test3Component } from './common/test3/test3.component';
 import { Test4Component } from './common/test4/test4.component';
 import { Test5Component } from './common/test5/test5.component';
-import { Test6Component } from './test6/test6.component';
+import { Test6Component } from './common/test6/test6.component';
 import { Test7Component } from './test7/test7.component';
 import { Test8Component } from './test8/test8.component';
 import { LifeComponent } from './life/life.component';

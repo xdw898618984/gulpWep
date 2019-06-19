@@ -19,7 +19,7 @@ import { Test4Component } from './common/test4/test4.component';
 import { Test5Component } from './common/test5/test5.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Code404Component } from './code404/code404.component';
-import { Test6Component } from './test6/test6.component';
+import { Test6Component } from './common/test6/test6.component';
 import { Test7Component } from './test7/test7.component';
 import { Test8Component } from './test8/test8.component';
 import { ProductComponent } from './product/product.component';
@@ -63,6 +63,14 @@ import { VersionChildComponent } from './common/test5/version-parent/version-chi
 import { VoterComponent } from './common/test5/vote-taker/voter/voter.component';
 import { CountdownTimerComponent } from './common/test5/countdown-parent-lv/countdown-timer/countdown-timer.component';
 import { AstronautComponent } from './common/test5/mission-control/astronaut/astronaut.component';
+import { PeekABooParentComponent } from './common/test6/peek-a-boo-parent/peek-a-boo-parent.component';
+import { SpyParentComponent } from './common/test6/spy-parent/spy-parent.component';
+import { OnChangesParentComponent } from './common/test6/on-changes-parent/on-changes-parent.component';
+import { DoCheckParentComponent } from './common/test6/do-check-parent/do-check-parent.component';
+import { AfterViewParentComponent } from './common/test6/after-view-parent/after-view-parent.component';
+import { AfterContentParentComponent } from './common/test6/after-content-parent/after-content-parent.component';
+import { CounterParentComponent } from './common/test6/counter-parent/counter-parent.component';
+import { PeekABooComponent } from './common/test6/peek-a-boo-parent/peek-a-boo/peek-a-boo.component';
 
 @NgModule({
   declarations: [
@@ -117,6 +125,14 @@ import { AstronautComponent } from './common/test5/mission-control/astronaut/ast
     VoterComponent,
     CountdownTimerComponent,
     AstronautComponent,
+    PeekABooParentComponent,
+    SpyParentComponent,
+    OnChangesParentComponent,
+    DoCheckParentComponent,
+    AfterViewParentComponent,
+    AfterContentParentComponent,
+    CounterParentComponent,
+    PeekABooComponent,
   ],
   imports: [
     BrowserModule, ScrollingModule, DragDropModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule
