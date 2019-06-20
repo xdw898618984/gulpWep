@@ -1,3 +1,27 @@
-<p>
-  do-check-parent works!
-</p>
+<!DOCTYPE html>
+<div class="parent">
+    <h3>{{title}}</h3>
+
+    <table>
+        <tr>
+            <td>
+                power:
+            </td>
+            <td>
+                <input type="text" [(ngModel)]="power">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                hero.name
+            </td>
+            <td>
+                <input type="text" [(ngModel)]="hero.name">
+            </td>
+        </tr>
+    </table>
+
+    <p><button (click)="reset()">Reset Log</button></p>
+
+    <app-do-check [hero]="hero" [power]="power"></app-do-check>
+</div>

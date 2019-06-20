@@ -10,14 +10,15 @@ export class LoggerService {
   constructor() { }
 
   log(msg: string) {
-
     if (msg === this.prevMsg) {
-
-      this.logs[this.logs.length - 1] = msg + `(${this.prevMsgCount += 1}x)`
+      this.logs[this.logs.length - 1] = msg + `(${this.prevMsgCount += 1}x)`;
     } else {
       this.prevMsg = msg;
       this.prevMsgCount = 1;
       this.logs.push(msg)
+
+      console.log(this.logs);
+
     }
 
   }

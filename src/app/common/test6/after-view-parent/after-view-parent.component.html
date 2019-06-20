@@ -1,3 +1,10 @@
-<p>
-  after-view-parent works!
-</p>
+<!DOCTYPE html>
+<div class="parent">
+    <h3>AfterView</h3>
+    <app-after-view *ngIf="show"></app-after-view>
+
+    <h4>--AfterView Log</h4>
+
+    <p><button (click)="reset()">Reset</button></p>
+    <div *ngFor="let msg of logger.logs">{{msg}}</div>
+</div>

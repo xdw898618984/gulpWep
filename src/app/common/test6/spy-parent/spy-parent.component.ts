@@ -1,15 +1,39 @@
 import { Component, OnInit } from '@angular/core';
+import { LoggerService } from '../../../service/logger.service';
 
 @Component({
   selector: 'app-spy-parent',
   templateUrl: './spy-parent.component.html',
-  styleUrls: ['./spy-parent.component.css']
+  styleUrls: ['./spy-parent.component.css'],
+  providers: [LoggerService]
 })
 export class SpyParentComponent implements OnInit {
-
-  constructor() { }
+  newName = 'Herbie';
+  heroes: string[] = ['Windstorm', 'Magneta'];
+  constructor(public logger: LoggerService) { }
 
   ngOnInit() {
+  }
+
+  addHero() {
+    if (this.newName.trim()) {
+      this.heroes.push(this.newName.trim());
+      this.newName = '';
+      this.logger.tick();
+
+    }
+  }
+
+  removeHero(hero: string) {
+    this.heroes.splice(this.heroes.indexOf(hero), 1);
+    this.logger.tick();
+
+  }
+
+  reset() {
+    this.logger.log('---reset---');
+    this.heroes = [];
+    this.logger.tick();
   }
 
 }

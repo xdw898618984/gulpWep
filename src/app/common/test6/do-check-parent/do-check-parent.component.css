@@ -1,0 +1,16 @@
+.parent {
+    background: rgb(67, 29, 240);
+    columns: #4245df;
+    margin: 14px 0;
+    padding: 8px;
+}
+
+input {
+    margin: 4px;
+    padding: 4px;
+}
+
+.comment {
+    color: red;
+    font-style: italic;
+}

@@ -1,0 +1,10 @@
+.hero {
+    background: rgb(235, 12, 216);
+    padding: 8px;
+}
+
+p {
+    background: rgb(109, 196, 120);
+    padding: 8px;
+    margin: 8px;
+}

@@ -71,6 +71,11 @@ import { AfterViewParentComponent } from './common/test6/after-view-parent/after
 import { AfterContentParentComponent } from './common/test6/after-content-parent/after-content-parent.component';
 import { CounterParentComponent } from './common/test6/counter-parent/counter-parent.component';
 import { PeekABooComponent } from './common/test6/peek-a-boo-parent/peek-a-boo/peek-a-boo.component';
+import { SpyDirective } from './directive/spy.directive';
+import { OnChangesComponent } from './common/test6/on-changes-parent/on-changes/on-changes.component';
+import { DoCheckComponent } from './common/test6/do-check-parent/do-check/do-check.component';
+import { AfterViewComponent } from './common/test6/after-view-parent/after-view/after-view.component';
+import { ChildViewComponent } from './common/test6/after-view-parent/child-view/child-view.component';
 
 @NgModule({
   declarations: [
@@ -133,6 +138,11 @@ import { PeekABooComponent } from './common/test6/peek-a-boo-parent/peek-a-boo/p
     AfterContentParentComponent,
     CounterParentComponent,
     PeekABooComponent,
+    SpyDirective,
+    OnChangesComponent,
+    DoCheckComponent,
+    AfterViewComponent,
+    ChildViewComponent,
   ],
   imports: [
     BrowserModule, ScrollingModule, DragDropModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule

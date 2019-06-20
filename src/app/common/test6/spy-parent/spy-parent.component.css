@@ -1,0 +1,20 @@
+.parent {
+    background: skyblue;
+    columns: #666666;
+    margin: 14px 0;
+    padding: 8px;
+}
+
+input {
+    margin: 4px;
+    padding: 4px;
+}
+
+.comment {
+    color: red;
+    font-style: italic;
+}
+
+.heroes {
+    background: rgb(0, 255, 157)
+}
