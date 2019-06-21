@@ -9,7 +9,7 @@ import { LoggerService } from '../../../../service/logger.service';
 })
 export class AfterViewComponent implements OnInit, AfterViewChecked, AfterViewInit {
   @ViewChild(ChildViewComponent)
-  ViewChild: ChildViewComponent
+  viewChild: ChildViewComponent
   constructor(private logger: LoggerService) {
     this.logIt('AfterView constructor')
   }
@@ -18,12 +18,12 @@ export class AfterViewComponent implements OnInit, AfterViewChecked, AfterViewIn
   ngOnInit() {
   }
   ngAfterViewChecked() {
-    if (this.prevHero === this.ViewChild.hero) {
+    if (this.prevHero === this.viewChild.hero) {
 
       this.logIt('AfterViewChecked (no change)');
 
     } else {
-      this.prevHero = this.ViewChild.hero;
+      this.prevHero = this.viewChild.hero;
       this.logIt('AfterViewChecked');
       this.doSomething()
     }
@@ -36,14 +36,14 @@ export class AfterViewComponent implements OnInit, AfterViewChecked, AfterViewIn
   }
 
   private doSomething() {
-    let c = this.ViewChild.hero.length > 10 ? `That's a long name` : ``;
+    let c = this.viewChild.hero.length > 10 ? `That's a long name` : ``;
     if (c != this.comment) {
       this.logger.tick_then(() => this.comment = c)
     }
   }
 
   private logIt(method: string) {
-    let child = this.ViewChild;
+    let child = this.viewChild;
     let message = `${method} :${child ? child.hero : "no"} child view `;
     this.logger.log(message)
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, AfterViewChecked } from '@angular/core';
 import { LoggerService } from '../../../service/logger.service';
 
 @Component({
@@ -8,14 +8,16 @@ import { LoggerService } from '../../../service/logger.service';
 })
 export class AfterViewParentComponent implements OnInit {
   show = true;
-  constructor(private logger: LoggerService) { }
+  constructor(public logger: LoggerService) { }
 
   ngOnInit() {
+
   }
   reset() {
     this.logger.clear();
     this.show = false;
     this.logger.tick_then(() => this.show = true)
   }
+
 
 }

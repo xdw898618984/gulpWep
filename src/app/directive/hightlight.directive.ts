@@ -1,7 +1,7 @@
 import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[hightlight],input ,h2'
+  selector: '[hightlight] ,h2'
 })
 export class HightlightDirective {
 

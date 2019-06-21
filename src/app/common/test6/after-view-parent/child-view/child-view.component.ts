@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-child-view',
@@ -11,5 +11,7 @@ export class ChildViewComponent implements OnInit {
 
   ngOnInit() {
   }
+
+
 
 }

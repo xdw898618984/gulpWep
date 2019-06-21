@@ -1,3 +1,4 @@
+import { Type } from "@angular/core"
 export interface User {
     id?: string;
     email: string;
@@ -64,4 +65,13 @@ export class Pipes {
     ) {
 
     }
+}
+
+export class AdItem {
+    constructor(public component: Type<any>, public data: any) { }
+}
+
+export interface AdComponent {
+    data: any
+
 }

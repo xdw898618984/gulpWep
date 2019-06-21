@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule, Routes } from '@angular/router';
@@ -20,9 +20,9 @@ import { Test5Component } from './common/test5/test5.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Code404Component } from './code404/code404.component';
 import { Test6Component } from './common/test6/test6.component';
-import { Test7Component } from './test7/test7.component';
+import { Test7Component } from './common/test7/test7.component';
 import { Test8Component } from './test8/test8.component';
-import { ProductComponent } from './product/product.component';
+import { ProductComponent } from './common/product/product.component';
 import { ProductdistComponent } from './productdist/productdist.component';
 import { Test2ChildComponent } from './common/test2/test2-child/test2-child.component';
 import { Test2OrderComponent } from './common/test2/test2-order/test2-order.component';
@@ -76,6 +76,11 @@ import { OnChangesComponent } from './common/test6/on-changes-parent/on-changes/
 import { DoCheckComponent } from './common/test6/do-check-parent/do-check/do-check.component';
 import { AfterViewComponent } from './common/test6/after-view-parent/after-view/after-view.component';
 import { ChildViewComponent } from './common/test6/after-view-parent/child-view/child-view.component';
+import { AdDirective } from './directive/ad.directive';
+import { AdBannerComponent } from './common/test7/ad-banner/ad-banner.component';
+import { HerojobadComponent } from './common/test7/ad-banner/herojobad/herojobad.component';
+import { HeroprofileComponent } from './common/test7/ad-banner/heroprofile/heroprofile.component';
+import { HighlightDirective } from './directive/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -143,11 +148,18 @@ import { ChildViewComponent } from './common/test6/after-view-parent/child-view/
     DoCheckComponent,
     AfterViewComponent,
     ChildViewComponent,
+    AdDirective,
+    AdBannerComponent,
+    HerojobadComponent,
+    HeroprofileComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule, ScrollingModule, DragDropModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule
   ],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],//没有html
+  entryComponents: [HerojobadComponent, HeroprofileComponent],//动态组件
   bootstrap: [AppComponent]
 })
 export class AppModule { }

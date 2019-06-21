@@ -7,10 +7,10 @@ import { Test3Component } from './common/test3/test3.component';
 import { Test4Component } from './common/test4/test4.component';
 import { Test5Component } from './common/test5/test5.component';
 import { Test6Component } from './common/test6/test6.component';
-import { Test7Component } from './test7/test7.component';
+import { Test7Component } from './common/test7/test7.component';
 import { Test8Component } from './test8/test8.component';
 import { LifeComponent } from './life/life.component';
-import { ProductComponent } from './product/product.component';
+import { ProductComponent } from './common/product/product.component';
 import { ProductdistComponent } from './productdist/productdist.component';
 import { Code404Component } from './code404/code404.component';
 import { LonginGuard } from './guard/longin.guard';
@@ -118,6 +118,9 @@ const routes: Routes = [
   }, {
     path: 'test7',
     component: Test7Component
+  }, {
+    path: 'product',
+    component: ProductComponent,
   }, {
     path: 'life',
     component: LifeComponent
