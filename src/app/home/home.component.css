@@ -1,0 +1,7 @@
+ul li:hover a {
+    color: red;
+}
+
+ul li:hover {
+    background: burlywood
+}
