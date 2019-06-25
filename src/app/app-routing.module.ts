@@ -30,7 +30,7 @@ import { FilterComponent } from './common/test3/filter/filter.component';
 import { HeroGroupComponent } from './common/test3/hero-group/hero-group.component';
 import { OpenClosePageComponent } from './common/test3/open-close-page/open-close-page.component';
 import { ReuseComponent } from './common/test3/reuse/reuse.component';
-
+import { Test81Component } from './common/test81/test81.component';
 const routes: Routes = [
   {
     path: 'test1',
@@ -118,6 +118,9 @@ const routes: Routes = [
   }, {
     path: 'test7',
     component: Test7Component
+  }, {
+    path: 'test8',
+    component: Test81Component
   }, {
     path: 'product',
     component: ProductComponent,
