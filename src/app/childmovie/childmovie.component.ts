@@ -3,12 +3,12 @@ import { Component, OnInit, Input, ChangeDetectionStrategy, ChangeDetectorRef } 
   selector: 'app-childmovie',
   templateUrl: './childmovie.component.html',
   styleUrls: ['./childmovie.component.css'],
-  changeDetection:ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ChildmovieComponent implements OnInit {
-  changeDetection: ChangeDetectionStrategy.OnPush
+  // changeDetection: ChangeDetectionStrategy.OnPush
   constructor(private changeRef: ChangeDetectorRef) { }
-  @Input() star:any;
+  @Input() star: any;
   @Input() title: string;
   ngOnInit() {
 

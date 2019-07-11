@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http"
-
+import { HttpClientInMemoryWebApiModule, InMemoryDbService } from 'angular-in-memory-web-api';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 
@@ -83,13 +83,13 @@ import { HerojobadComponent } from './common/test7/ad-banner/herojobad/herojobad
 import { HeroprofileComponent } from './common/test7/ad-banner/heroprofile/heroprofile.component';
 import { HighlightDirective } from './directive/highlight.directive';
 import { Test81Component } from './common/test81/test81.component';
-import { ConfigComponent } from './common/test81/config/config.component';
-import { DownloaderComponent } from './common/test81/downloader/downloader.component';
+import { DashboardComponent } from './common/test81/dashboard/dashboard.component';
+import { HeroDetailComponent } from './common/test81/hero-detail/hero-detail.component';
+import { HeroSearchComponent } from './common/test81/hero-search/hero-search.component';
 import { HeroesComponent } from './common/test81/heroes/heroes.component';
-import { HttpInterceptorsComponent } from './common/test81/http-interceptors/http-interceptors.component';
-import { MessagesComponent } from './common/test81/messages/messages.component';
-import { PackageSearchComponent } from './common/test81/package-search/package-search.component';
-import { UploaderComponent } from './common/test81/uploader/uploader.component';
+import { MessageComponent } from './common/test81/message/message.component';
+import { InMemoryDataService } from './service/in-memory-data.service';
+import { BallComponent } from './ball/ball.component';
 
 @NgModule({
   declarations: [
@@ -163,16 +163,19 @@ import { UploaderComponent } from './common/test81/uploader/uploader.component';
     HeroprofileComponent,
     HighlightDirective,
     Test81Component,
-    ConfigComponent,
-    DownloaderComponent,
+    DashboardComponent,
+    HeroDetailComponent,
+    HeroSearchComponent,
     HeroesComponent,
-    HttpInterceptorsComponent,
-    MessagesComponent,
-    PackageSearchComponent,
-    UploaderComponent,
+    MessageComponent,
+    BallComponent,
   ],
   imports: [
-    BrowserModule, HttpClientModule, ScrollingModule, DragDropModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule
+    BrowserModule,
+    // HttpClientInMemoryWebApiModule.forRoot(
+    //   // InMemoryDbService, { dataEncapsulation: false }
+    // ),
+    HttpClientModule, ScrollingModule, DragDropModule, AppRoutingModule, RouterModule, FormsModule, ReactiveFormsModule, SharedModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],//没有html

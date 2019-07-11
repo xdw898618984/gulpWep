@@ -31,6 +31,9 @@ import { HeroGroupComponent } from './common/test3/hero-group/hero-group.compone
 import { OpenClosePageComponent } from './common/test3/open-close-page/open-close-page.component';
 import { ReuseComponent } from './common/test3/reuse/reuse.component';
 import { Test81Component } from './common/test81/test81.component';
+import { DashboardComponent } from './common/test81/dashboard/dashboard.component';
+import { HeroesComponent } from './common/test81/heroes/heroes.component';
+import { HeroDetailComponent } from './common/test81/hero-detail/hero-detail.component';
 const routes: Routes = [
   {
     path: 'test1',
@@ -120,7 +123,19 @@ const routes: Routes = [
     component: Test7Component
   }, {
     path: 'test8',
-    component: Test81Component
+    component: Test81Component,
+    children: [{
+      path: 'dash',
+      component: DashboardComponent,
+      children: [{
+        path: 'detail/:id',
+        component: HeroDetailComponent
+      }]
+    }, {
+      path: 'hero',
+      component: HeroesComponent,
+    }
+    ]
   }, {
     path: 'product',
     component: ProductComponent,
@@ -153,7 +168,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule, RouterModule.forRoot(routes)
+    CommonModule, RouterModule.forRoot(routes, { useHash: true })
   ],
   // 登录守卫和离开守卫 resolve 守卫
   providers: [LonginGuard, UnsaveGuard, ResolveGuard]

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HttpInterceptorsComponent } from './http-interceptors.component';
+import { HeroSearchComponent } from './hero-search.component';
 
-describe('HttpInterceptorsComponent', () => {
-  let component: HttpInterceptorsComponent;
-  let fixture: ComponentFixture<HttpInterceptorsComponent>;
+describe('HeroSearchComponent', () => {
+  let component: HeroSearchComponent;
+  let fixture: ComponentFixture<HeroSearchComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HttpInterceptorsComponent ]
+      declarations: [ HeroSearchComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HttpInterceptorsComponent);
+    fixture = TestBed.createComponent(HeroSearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

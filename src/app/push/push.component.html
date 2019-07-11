@@ -11,4 +11,13 @@
 
 <app-childmovie [title]="title" [star]="star"></app-childmovie>
 
+<h1>变更检测策略的第二种使用方法</h1>
 
+<app-ball #test [ball]="ball"></app-ball>
+
+<br><br>
+<br>
+<input #input>
+<button (click)="addBall(input.value)">Add a ball</button>
+<br>
+<button (click)="changeRef()">Change Ref</button>
